@@ -77,7 +77,7 @@ def chat():
         print(Fore.CYAN + "\nWhat would you like to do?")
         command = normalize_input(input("> "))
 
-        if command == "recomend":
+        if command == "recommend":
             provide_recommendation()
         elif command == "pack":
             offer_packing_tips()
@@ -91,5 +91,5 @@ def chat():
         else:
             print(Fore.RED + "Sorry, I didn't understand that command. Type 'help' to see options.")
 
-            if __name__ == "__main__":
-                chat()
+if __name__ == "__main__":
+    chat()
